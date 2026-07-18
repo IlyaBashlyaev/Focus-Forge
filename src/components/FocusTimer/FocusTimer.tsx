@@ -61,7 +61,7 @@ export function FocusTimer({ addictions }: FocusTimerProps) {
   }
 
   const handleTimeChange = (minutes: number, seconds: number) => {
-    const clampedMinutes = Math.max(0, minutes)
+    const clampedMinutes = Math.min(99, Math.max(0, minutes))
     const clampedSeconds = Math.min(59, Math.max(0, seconds))
     const nextTotal = clampedMinutes * 60 + clampedSeconds
     setMinutesInput(clampedMinutes)
@@ -101,6 +101,7 @@ export function FocusTimer({ addictions }: FocusTimerProps) {
           <input
             type="number"
             min={0}
+            max={99}
             value={minutesInput}
             disabled={isRunning}
             onChange={(event) => handleTimeChange(Number(event.target.value), secondsInput)}

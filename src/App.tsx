@@ -6,7 +6,7 @@ import { Nav } from './components/Nav'
 import { ThemeToggle } from './components/ThemeToggle'
 import { FocusTimer } from './components/FocusTimer/FocusTimer'
 import { Addictions } from './components/Addictions/Addictions'
-import { UsefulVideos } from './components/Videos/UsefulVideos'
+import { UsefulVideos } from './components/UsefulVideos/UsefulVideos'
 
 function App() {
   const [section, setSection] = useState<Section>('timer')
