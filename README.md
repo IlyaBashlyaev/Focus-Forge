@@ -1,5 +1,9 @@
 # Focus Forge
 
+> Focus Forge - Prevents your urge
+
+---
+
 ## Definition
 
 Focus Forge is a small React application built to interrupt the **dopamine anticipation loop** that drives compulsive scrolling, binge-watching, and gaming. It does not block distracting apps or sites. Instead, it asks for one minute (or however long you choose) of doing nothing before you give in to the urge, giving your dopamine level time to settle so the decision to consume becomes a conscious one instead of a reflex.
@@ -86,3 +90,20 @@ Vite will print a local URL (typically `http://localhost:5173`). Open it in your
 - `npm run build`: type-check the project and produce a production build in `dist/`
 - `npm run preview`: serve the production build locally
 - `npm run lint`: run ESLint over the project
+
+---
+
+## Google Chrome Extension
+
+As a bonus, you can install Focus Forge as an extension in Google Chrome so that the focus timer is always within easy reach. The extension opens the app as a fixed-size popup from the toolbar, so you don't need to keep a browser tab open just for the timer.
+
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+2. Open `chrome://extensions` in Chrome.
+3. Enable **Developer mode** using the toggle in the top-right corner.
+4. Click **Load unpacked** and select the generated `dist/` folder.
+5. Pin the Focus Forge icon to the toolbar for one-click access to the timer.
+
+Whenever you make changes to the app, rerun `npm run build` and click the refresh icon on the extension's card in `chrome://extensions` to pick up the new version.

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Forge - Prevents your urge",
+  "description": "Focus Forge is a small React application built to interrupt the dopamine anticipation loop that drives compulsive scrolling, binge-watching, and gaming. It does not block distracting apps or sites. Instead, it asks for one minute (or however long you choose) of doing nothing before you give in to the urge, giving your dopamine level time to settle so the decision to consume becomes a conscious one instead of a reflex.",
+  "version": "1.0.0",
+  "author": "Ilya Bashlyaev",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Focus Forge",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  }
+}

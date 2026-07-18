@@ -86,7 +86,7 @@ export function FocusTimer({ addictions }: FocusTimerProps) {
   const selectedAddiction = addictions.find((addiction) => addiction.id === selectedAddictionId)
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-center gap-10">
       <CircularProgress progress={progress}>
         <div className="flex flex-col items-center gap-1">
           <span className="font-mono text-5xl font-semibold tabular-nums text-slate-900 dark:text-slate-50">
