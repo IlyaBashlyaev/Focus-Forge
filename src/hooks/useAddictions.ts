@@ -4,9 +4,8 @@ import type { Addiction } from '../types'
 const ADDICTIONS_KEY = 'focus-forge-addictions'
 
 const DEFAULT_ADDICTIONS: Addiction[] = [
-  { id: 'youtube', name: 'YouTube' },
   { id: 'social-media', name: 'Social Media' },
-  { id: 'video-games', name: 'Video Games' },
+  { id: 'video-games', name: 'Video Games' }
 ]
 
 export function useAddictions() {
