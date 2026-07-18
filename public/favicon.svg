@@ -4,7 +4,7 @@
   
   <!-- Text Group using Inter/Sans-Serif typography styled for balance -->
   <g fill="#ffffff" font-family="Inter, system-ui, -apple-system, sans-serif" text-anchor="middle" font-weight="800">
-    <text x="256" y="225" font-size="140" letter-spacing="-0.02em">Focus</text>
-    <text x="256" y="355" font-size="140" letter-spacing="-0.02em" opacity="0.9">Forge</text>
+    <text x="256" y="225" font-size="160" letter-spacing="-0.02em">Focus</text>
+    <text x="256" y="355" font-size="160" letter-spacing="-0.02em">Forge</text>
   </g>
 </svg>

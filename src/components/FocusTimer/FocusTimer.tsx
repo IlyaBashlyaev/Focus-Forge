@@ -23,6 +23,11 @@ export function FocusTimer({ addictions }: FocusTimerProps) {
   const [isComplete, setIsComplete] = useState(false)
 
   const intervalRef = useRef<number | undefined>(undefined)
+  const finishSoundRef = useRef<HTMLAudioElement | null>(null)
+
+  if (finishSoundRef.current === null) {
+    finishSoundRef.current = new Audio('/sounds/timer_finish.wav')
+  }
 
   const selectedAddictionId = addictions.some((addiction) => addiction.id === addictionId)
     ? addictionId
@@ -37,6 +42,7 @@ export function FocusTimer({ addictions }: FocusTimerProps) {
           window.clearInterval(intervalRef.current)
           setIsRunning(false)
           setIsComplete(true)
+          finishSoundRef.current?.play().catch(() => {})
           return 0
         }
         return current - 1
@@ -57,6 +63,10 @@ export function FocusTimer({ addictions }: FocusTimerProps) {
   const handleReset = () => {
     setIsRunning(false)
     setIsComplete(false)
+    if (finishSoundRef.current) {
+      finishSoundRef.current.pause()
+      finishSoundRef.current.currentTime = 0
+    }
     setRemainingSeconds(totalSeconds)
   }
 
